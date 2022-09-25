@@ -21,12 +21,13 @@
     <h1>Olá, Mundo</h1>
     <p>Já me livrei da maldição</p>
     <script>
-        var n1 = window.prompt('Digite um número:') // string
-        var n2 = window.prompt('Digite ouro número:') // string
+        var n1 = Number.parseInt(prompt('Digite um número:')) // string
+        var n2 = Number.parseInt(prompt('Digite ouro número:')) // string
         var s = n1 + n2
         window.alert('A soma dos valores é ' + s) // concatenação
         // (number + number) para adição
         // (string + string) para concatenação 
+        // converter para string s.toString() ou String(s)
     </script>
 </body>
 </html>
