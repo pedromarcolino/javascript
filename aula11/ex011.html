@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fronteiras</title>
+</head>
+<body>
+    <h1>Sistemas de Países</h1>
+    Qual é o seu pais: <input type="text" name="tpais" id="tpais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var pais = window.document.querySelector('input#tpais').value
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Você mora em ${pais}</p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += '<p>Você é <strong>BRASILEIRO</strong></p>'
+            } else {
+                res.innerHTML += '<p>Você é <strong>ESTRANGEIRO</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>
